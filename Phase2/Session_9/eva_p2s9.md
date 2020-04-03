@@ -54,4 +54,4 @@ Update Actor target by polyak Average once every two iterations.
 ## Step 15
 Update Critic target by polyak Average once every two iterations
 
-[text]()<img src="./images/step15_1.svg">
+[]()<img src="./images/step15_1.svg">
