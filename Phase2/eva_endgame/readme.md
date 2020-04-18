@@ -6,7 +6,7 @@
 
 Environment 
 1. Removed all the sensor 
-2. The environment has a function get_image() which returns image patch with car
+2. The environment has a function get_image() which returns image patch with car. 
 we can crop the sand image along with the car using car position on the sand. Then apply Pillow rotate function to rotate the car image which shall be passed as an input to our brain.update
 
 T3D code:
