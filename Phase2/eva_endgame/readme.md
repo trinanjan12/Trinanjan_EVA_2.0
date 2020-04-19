@@ -31,6 +31,8 @@ The action space dim is 1. which is the rotation of the car.
 1. First Tried with only image crop
 2. Then orientation is also sent as state parameters
 3. Done = true is made  based on cumulative reward (< -2000) to terminate episode
+4. Different network architecture
+5. Different max action and temperature values
 
 
 ## TODO:
