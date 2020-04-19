@@ -1,25 +1,33 @@
 # EVA ENDGAME PROJECT
 
-## This Code is unfinished and doesn't run yet
+## Project Description:
 
-### Things that are done
+Train a Self learning car Env Using Twin Delay DDPG Algo
 
-Environment 
-1. Removed all the sensor 
-2. The environment has a function get_image() which returns image patch with car. 
-we can crop the sand image along with the car using car position on the sand. Then apply Pillow rotate function to rotate the car image which shall be passed as an input to our brain.update
+## Environment Description:
+1. Observation sapce :
+The env has 3 states. Image with car rotated, orientation, -orientataion. The orientataion is basically the angle between car velocity and the destination
+2. Action sapce:
+The action space dim is 1. which is the rotation of the car.
 
-T3D code:
-1. Actor model takes input image and convolutes. Finally predicts the action
+## Training Configuration:
 
-2. Critic model : First some convolution operations are done on the input image to shrink it to a dimensions(something like embeddings) and after that the concatenation input of action and embeddings are feed to the critic network. Critic shall predict Q code
+## Accomplishment :
 
+1. Integrated car env with Twin Delay DDPG
+2. Used image with car orientation instead of sensors
+3. Also added orientation as 2 more state
 
-## TODO: 
-1. Write train loop so that every time the TD3 update is called it should train the models and update them(based on policy freq)
+## Current problems:
+1. The network is not training well
+2. Car starts rotating when the actor model predicts the same angle
 
-2. Need to check whether the evaluation_policy class code could be reused 
+## TODO:
 
-3. Need to check if the input patch with direction is enough for the model to learn  or not. Otherwise need to send the direction information separately
-
-
+1. Make a better documentation
+2. Train with different parameter 
+3. Train with better reward values and strategy
+4. Make the code more modular and remove all unwanted commented sections
+5. Figure out the role of temperature value
+6. Make the image convolution network better
+7. Train for more number of steps
