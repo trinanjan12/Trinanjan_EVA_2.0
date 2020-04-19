@@ -21,7 +21,7 @@ from kivy.graphics.texture import Texture
 import torchvision.transforms as transforms
 
 # Importing the Dqn object from our AI in ai.py
-from final_t3d_new import Train_TD3
+from final_t3d import Train_TD3
 
 
 ######## Constants and Configs ########
