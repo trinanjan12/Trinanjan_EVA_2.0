@@ -11,6 +11,11 @@ The env has 3 states. Image with car rotated, orientation, -orientataion. The or
 The action space dim is 1. which is the rotation of the car.
 
 ## Training Configuration:
+1. The episode timestep is defined as 2000
+2. after episode is done the car is respawned with a random (x,y) and the goals are also randomly changed
+3. total 3 states are sent to the network, the image crop with car, and the 2 orientations 
+4. The networks fills up replay buffer memory initially
+5. After that policy model is  trained for each episode_steps
 
 ## Accomplishment :
 
@@ -21,6 +26,12 @@ The action space dim is 1. which is the rotation of the car.
 ## Current problems:
 1. The network is not training well
 2. Car starts rotating when the actor model predicts the same angle
+
+## Things Tried:
+1. First Tried with only image crop
+2. Then orientation is also sent as state parameters
+3. Done = true is made  based on cumulative reward (< -2000) to terminate episode
+
 
 ## TODO:
 
