@@ -75,11 +75,11 @@
 
     #### Trained only for Distance:  
 
-    ![Watch the video]()
+    ![Watch the video](https://youtu.be/TlAh78Tc1HI)
 
     #### Trained only for Sand:  
 
-    ![Watch the video]()
+    ![Watch the video](https://www.youtube.com/watch?v=Afhnsyr_oRo)
 
     #### Trained Sand + Distance:  
 
@@ -110,3 +110,4 @@
 
 ### ToDo:
     1. Need to plot the graph for sand/distance accumulated rewards to design the optimum training rewards
+    2. Final training to keep the car on road
