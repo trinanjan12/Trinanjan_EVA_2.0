@@ -1,5 +1,15 @@
 ## Self Learning Car With Reinforcement Learning 
 
+## Update 
+    # Work in Progress as of May 10 2020
+    1. working with continuous function reward strategy(no more absolute values). This makes the learning better
+    source https://medium.com/@BonsaiAI/deep-reinforcement-learning-models-tips-tricks-for-writing-reward-functions-a84fe525e8e0
+    2. currently the car runs between 2 points easily, but the moment i start giving reward while the car is on sand i can see that the car tires to be on the road, but somehow distance is overpowering, so it goes out of road.
+    3. Thinking about how to give reward for being on road, it should not be only be based on distance. thinking about      getting distance from the middle of the track and add it as state parameter. Only problem is for this i need to draw a map such that i can query the middle point.
+    
+    
+    
+
 ### Project Statement :
 Making a reinforcement learning agent(car) to travel around a city map and to reach from point A to Point B while taking the road and avoiding sand 
 
